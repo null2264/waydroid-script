@@ -28,7 +28,7 @@ sudo venv/bin/python3 main.py
 git clone https://github.com/casualsnek/waydroid_script
 cd waydroid_script
 python3 -m venv venv
-venv/bin/pip install -r requirements.txt
+env GBINDER_USE_CYTHON="y" venv/bin/pip install -r requirements.txt
 # install something
 sudo venv/bin/python3 main.py install {gapps, magisk, libndk, libhoudini, nodataperm, smartdock, microg, mitm}
 # uninstall something
